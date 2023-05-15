@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MultiFunction</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a class="logo" href="index.html"><img src="Untitled.png" alt="logo"></a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="BMI.html">BMI Calculator</a></li>
+                    <li><a href="password.html">Password Gen</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="index.html">Home</a>
+            <p class="menu cta">Menu</p>
+        </header>
+        <div class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="BMI.html">BMI Calculator</a>
+                <a href="password.html">Password Gen</a>
+                <a href="#">Home</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="bmiImage">
+                <img src="measurement-icon.png" alt="measurement-icon" width="250px" height="250px">
+            </div>
+            <div class="bmiText">
+                <h1>Measurement Converter
+                    <p class="acct2">Our <b><a href="#">Measurement Converter</a></b> will convert common measurements.</p>
+                </h1>
+                <div class="mConverter">
+                    <p>Enter a value and select the units to convert:</p>
+                    <input type="number" id="value" placeholder="Enter a value">
+                    <select id="from">
+                        <option value="inches">Inches</option>
+                        <option value="centimeters">Centimeters</option>
+                        <option value="meters">Meters</option>
+                        <option value="kilometers">Kilometers</option>
+                        <option value="feet">Feet</option>
+                    </select>
+                    <b>Convert to:</b>
+                    <select id="to">
+                        <option value="inches">Inches</option>
+                        <option value="centimeters">Centimeters</option>
+                        <option value="meters">Meters</option>
+                        <option value="kilometers">Kilometers</option>
+                        <option value="feet">Feet</option>
+                    </select>
+                    <button onclick="convert()">Convert</button>
+                    <p id="result"></p>
+                    <script src="script.js"></script>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="mobile.js"></script>
+    </body>
+</html>
